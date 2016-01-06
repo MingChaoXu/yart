@@ -66,7 +66,7 @@ a {
 .subsection-tagline {
 	font-size: 10pt;
 	letter-spacing: 0.12rem;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	display: block;
 	margin: 13pt 0 13pt -10pt;
 }
@@ -256,7 +256,7 @@ a {
 	font-weight: 400;
 	color: #2B8CD2;
 	letter-spacing: 0.12rem;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 h3 {

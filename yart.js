@@ -3,11 +3,11 @@ var resumeMarkdownParser = function (rawInput) {
         return this.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
 	};
     String.prototype.beginWith = function (__sub) {
-        if(this.indexOf(__sub) == 0) {
+        if (this.indexOf(__sub) == 0) {
             return true;
 		} else {
             return false;
-		}
+		};
 	};
     Array.prototype.add = function(x) {
         if (typeof(x) === 'number') {
@@ -17,8 +17,8 @@ var resumeMarkdownParser = function (rawInput) {
 		} else {
             for (var i = 0; i < x.length; i++) {
                 this.push(x[i]);
-			}
-		}
+			};
+		};
 	};
     var _ast = rawInput.trim().replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n\n/g, '\n').replace(/\n\n/g, '\n').split('\n');
     for (var i = 0; i < _ast.length; i++) {
@@ -39,6 +39,9 @@ var resumeMarkdownParser = function (rawInput) {
 			_htmlText = _ast[i].slice(2)._parseMarkdownAnchor();
 		} else if (_ast[i].beginWith('## ')) {
 			_htmlTag = 'h3';
+			_htmlText = _ast[i].slice(3).replace(/(.*) \{/i, '<span class="job">$1</span> {').replace(/ \{(.*)\}/, ' <span class="duration">$1</span>')._parseMarkdownAnchor();
+		}else if (_ast[i].beginWith('### ')) {
+			_htmlTag = 'div';
 			_htmlText = _ast[i].slice(3).replace(/(.*) \{/i, '<span class="job">$1</span> {').replace(/ \{(.*)\}/, ' <span class="duration">$1</span>')._parseMarkdownAnchor();
 		} else if (_ast[i].beginWith(':: ')) {
 			_htmlTag = 'div';
