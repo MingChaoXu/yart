@@ -9,7 +9,7 @@
 }
 
 body {
-	font-size: 10pt;
+	font-size: 8pt;
 	margin: 0 auto;
 }
 
@@ -19,13 +19,13 @@ strong {
 
 .avatar {
 	float: right;
-	width: 3.38cm;
-	height: 3.38cm;
+	width: 3.3cm;
+	height: 3.3cm;
 	margin: -1pt 0 0 0;
 }
 
 h1 {
-	font-size: 28pt;
+	font-size: 20pt;
 	margin: 0 0 6pt;
 }
 
@@ -57,9 +57,9 @@ a {
 }
 
 .section-heading {
-	font-size: 18pt;
+	font-size: 14pt;
 	letter-spacing: 0.10rem;
-	padding-top: 18pt;
+	padding-top: 10pt;
 	margin: 0 0 13pt -10pt;
 }
 
@@ -68,18 +68,18 @@ a {
 	letter-spacing: 0.12rem;
 	text-transform: capitalize;
 	display: block;
-	margin: 13pt 0 13pt -10pt;
+	margin: 7pt 0 6pt -8pt;
 }
 
 h3 {
-	font-size: 12pt;
-	margin: 13pt 0 5pt;
+	font-size: 10pt;
+	margin: 7pt 0 5pt;
 }
 
 h3 .job {
 	box-sizing: border-box;
 	display: inline-block;
-	min-width: 7cm;
+	min-width: 10cm;
 }
 
 h3 .duration {
