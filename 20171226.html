@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Yunfan — CV</title>
+	<link rel="shortcut icon" href="./avatar.png"/>
+	<link rel="apple-touch-icon" href="./yunfan.png"/>
+	<link rel="stylesheet" type="text/css" href="yart-main.css">
+	<script src="./yart.js"></script>
+	<style>
+	#source-md {
+		display: none;
+	}
+	</style>
+	<script type="text/javascript">
+	window.addEventListener('load', function(){
+		window.theDoms = document.body.getElementsByClassName('lazy-display-animation');
+		window.theDelay = 50;
+		for (var i = 0; i < window.theDoms.length; i++) {
+			setTimeout((function(ii){
+				var _fu = function () {
+					window.theDoms[ii].classList.add('played');
+				};
+				return _fu;
+			})(i), window.theDelay*i);
+		};
+		[].map.call(document.body.getElementsByTagName('a'), function (n) {
+			n.target = '_blank';
+		});
+		[].map.call(document.body.querySelectorAll('img[data-async-src]'), function (n) {
+			n.src = n.getAttribute('data-async-src');
+		});
+	}, false);
+	</script>
+</head>
+<body>
+	<div class="download-button-container">
+<!-- 		<a class="download-button lazy-display-animation" href="./pdf/yart.pdf">Download PDF</a> -->
+	</div>
+	<div class="page-start"></div>
+	<div id="source-md">
+		@ 卢云帆
+
+		@@ 手机: [+185-0139-6615](tel:+185-0139-6615)
+		@@ 邮箱: [luyunfan17@mails.ucas.ac.cn](mailto:luyunfan17@mails.ucas.ac.cn)
+		@@ GitHub: [github.com/yunfanlu](https://github.com/yunfanLu)
+		@@ 地址: [北京·怀柔·中国科学院大学]()
+
+		# 教育经历
+
+		// 专业及学校
+
+		## 计算机应用技术（模式识别） @ 中国科学院大学 {09/2017 - 现在}
+		## 计算机科学 @ 南京理工大学 {09/2013 - 07/2017}
+
+		# 项目及竞赛经历
+
+		// PM2.5 同图像质量关系的研究
+
+		## 职责 @ 论文学习；编码APP；服务器端的实现	 {09/2016 - 5/2017}
+		// 个人陈述
+
+		// 获得的奖项
+
+		==== A line starting with four equal signs will generate a page break for printing.
+	</div>
+	<div class="grand cont" id="cont">
+		<img class="avatar" data-async-src="./picture.jpg">
+	</div>
+	<script type="text/javascript">
+	var source = document.getElementById('source-md').innerHTML;
+	document.getElementById('source-md').remove()
+	resumeMarkdownParser(source);
+	</script>
+</body>
+</html>
