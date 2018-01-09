@@ -99,6 +99,8 @@ p a {
 	margin: 5pt 0 5pt;
 }
 
+html, body, * { font-family: "Verdana, Arial" ! important; }
+
 
 /* ----------------------------------------------------------- */
 
@@ -110,7 +112,8 @@ p a {
 
 @media screen {
 	.download-button {
-		font-family: 'Seravek', 'Seoge UI', 'Helvetica Neue', 'Helvetica', Verdana, Arial, 'Lantinghei SC', 'Hiragino Sans GB', 'Heiti SC', sans-serif;
+		font-family: 'Songti','Seravek', 'Seoge UI', 'Helvetica Neue', 'Helvetica', Verdana, Arial, 'Lantinghei SC', 'Hiragino Sans GB', 'Heiti SC', sans-serif;
+		src: url('/Library/Fonts/Songti.ttc');
 		font-size: 14pt;
 		border-radius: 3px;
 		letter-spacing: 0.03rem;
