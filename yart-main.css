@@ -248,7 +248,7 @@ a {
 
 .section-heading {
 	font-weight: 400;
-	color: #2B8CD2;
+	color: #00CC00;
 	letter-spacing: 0.10rem;
 	text-transform: uppercase;
 	border-bottom: 0.8px solid #E5E5E5;
@@ -257,7 +257,7 @@ a {
 
 .subsection-tagline {
 	font-weight: 400;
-	color: #2B8CD2;
+	color: #00CC00;
 	letter-spacing: 0.12rem;
 	text-transform: none;
 }
@@ -278,7 +278,7 @@ p {
 }
 
 p a {
-	color: #2B8CD2;
+	color: #00CC00;
 }
 
 .ref {
